@@ -23,6 +23,8 @@ body {
   margin: auto;
 }
 
+/* Estilos del header */
+
 header {
   padding: 30px 0;
 }
@@ -49,4 +51,81 @@ header nav a {
 header nav a:hover,
 header nav .active {
   color: #fff;
+}
+
+/* Estilos de la portada */
+
+.portada {
+  color: #fff;
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 100%), url('../img/portada.jpg');
+  background-size: cover;
+  background-position: center center;
+  min-height: 40.62em;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: flex-end;
+}
+
+.portada .contenedor {
+  margin: 0 auto;
+  margin-bottom: 6.25em;
+}
+
+.portada .titulo {
+  font-size: 3.12em;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+}
+
+.portada .descripcion {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.portada .boton {
+  background: rgba(0,0,0,.5);
+  border: none;
+  border-radius: 0.31em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.12em;
+  margin-right: 1.25em;
+  padding: 0.93em 1.87em;
+  outline: none;
+  transition: .3s ease all;
+}
+
+.portada .boton i {
+  margin-right: 1.25em;
+}
+
+.portada .boton:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 800px) {
+  header .logotipo {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  header .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .portada {
+    font-size: 14px;
+  }
+
+  .portada .descripcion {
+    max-width: 100%;
+  }
 }
